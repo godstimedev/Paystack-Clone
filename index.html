@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paystack</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"/>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container nav-menu-item">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/images/logo.png" alt="Paystack" height="22px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Why Paystack
+              </a>
+              <ul class="dropdown-menu ms-auto-5 py-3 px-3" aria-labelledby="navbarDropdown">
+                <li class="d-flex ">
+                  <a href="#"><img src="assets/images/why_choose_paystack_db.svg" alt="" width="50px"></a>
+                  <a class="dropdown-item" href="#"> Why choose paystack  <p class="pt-1"> Over 60,000 businesses trust <br> paystack. Here's why</p> </a>
+                </li>
+                <li class="d-flex ">
+                  <a href="#"><img src="assets/images/success_rates_db.svg" alt="" width="50px"></a>
+                  <a class="dropdown-item" href="#"> Success Rates  <p class="pt-1"> Get the best transaction success <br> rates in the industry</p> </a>
+                </li>
+                <li class="d-flex ">
+                  <a href="#"><img src="assets/images/demo_db.svg" alt="" width="50px"></a>
+                  <a class="dropdown-item" href="#"> Demo  <p class="pt-1"> See the Paystack Checkout Form <br> and Dashboard in action</p> </a>
+                </li>
+              </ul>
+              <div class="dropdown-menu  side-dropdown" aria-labelledby="navbarDropdown">
+                <ul>
+                  <div class="small-txt">YOUR GROWTH STAGE</div>
+                  <li>For Entrepreneurs </li>
+                  <li>For Corporates</li>
+                  <li>For Global Brands</li>
+                </ul>
+                <ul>
+                  <div class="small-txt">YOUR BUSINESS TYPE</div>
+                  <li>For Fintechs</li>
+                  <li>For Schools</li>
+                  <li>For Betting</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Learn
+              </a>
+              <ul class="dropdown-menu ms-auto-5 py-3 px-3" aria-labelledby="navbarDropdown">
+                <li class="d-flex ">
+                  <a href="#"><img src="assets/images/blog_db.svg" alt="" width="50px"></a>
+                  <a class="dropdown-item" href="#"> Blog  <p class="pt-1"> Original lessons about making the <br> internet work for your business</p> </a>
+                </li>
+                <li class="d-flex ">
+                  <a href="#"><img src="assets/images/guides_db.svg" alt="" width="50px"></a>
+                  <a class="dropdown-item" href="#"> Guides  <p class="pt-1"> Big ideas in payments, explained in <br> simple English</p> </a>
+                </li>
+                <li class="d-flex ">
+                  <a href="#"><img src="assets/images/tutorials_db.svg" alt="" width="50px"></a>
+                  <a class="dropdown-item" href="#"> Video Tutorials  <p class="pt-1"> Quick video tutorials on how to use <br> Paystack</p> </a>
+                </li>
+                <li class="d-flex ">
+                  <a href="#"><img src="assets/images/decode_fintech_db.svg" alt="" width="50px"></a>
+                  <a class="dropdown-item" href="#"> Decode Fintech  <p class="pt-1"> The trade email newsletter and <br> podcast for leaders in African <br> fintech</p> </a>
+                </li>
+              </ul>
+              <div class="side-dropdown">
+
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Developers
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Overview</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Documentation</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Status page</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Support
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Quick Help</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Why was i debited?</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-success" type="button">
+                Create free account
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- page 1 -->
+    <section class="info1">
+      <div class="top-info">
+        <h1 class="heading">
+          Modern online and offline <br />
+          payments for Africa
+        </h1>
+        <p class="heading-text">
+          Paystack helps businesses in Africa get paid by anyone,<br />
+          anywhere in the world
+        </p>
+        <button class="btn btn-success butn" type="button">
+          Create free account
+        </button>
+      </div>
+      <div class="info-bottom">
+        <div class="info-bottom-l">
+            <p>Trusted by over 60,000 businesses</p>
+            <div class="brand ">
+              <div><img src="assets/images/Dominos-Plain.svg" alt="" width="130px"></div>
+              <div><img src="assets/images/MTN-Plain.svg" alt="" width="70px"></div>
+              <div><img src="assets/images/Bolt-Stack-Blue_200304_153027.svg" alt="" width="50px"></div>
+              <div><img src="assets/images/Axa-mansard-_-Plain.svg" alt="" width="160px"></div>
+            </div>
+        </div>
+        
+        <div class="info-bottom-r">
+          <a href="#" class="text-dark"
+            >Watch MTN chief Transformation Officer, Olubayo <br />
+            Adekanmbi, discuss working with Paystack
+          </a>
+          <a href="#" class="py-2 ms-2"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-play-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- page 2 -->
+    <section class="info2">
+      <div class="info2-l">
+        <h1 class="heading">Simple, easy payments</h1>
+        <p class="heading-text">
+          Building a business is hard. Getting paid shouldn't be.
+        </p>
+      </div>
+      <div class="img1">
+        <img
+          src="assets/images/Collect-Payments-for-Multiple-Channels.gif"
+          alt=""
+          width="90%"
+        />
+      </div>
+
+      <div info2-r>
+        <div class="info2-r-1">
+          <h3 class="heading">
+            Delight customers with a seamless payments experience
+          </h3>
+          <p class="heading-text">
+            Give your customers the gift of modern, frictionless, painless
+            payments. Integrate Paystack once and let your customers pay you
+            however they want.
+          </p>
+        </div>
+
+        <div class="info2-r-2">
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Card
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Bank Account
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Bank Transfer
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              USSD
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Apple Pay
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Visa QR
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Mobile Money
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              POS(Coming soon)
+            </li>
+          </ul>
+        </div>
+
+        <div class="info2-r-3">
+          <h3 class="heading">Enjoy phenomenal transaction success rates</h3>
+          <p class="heading-text">
+            We automatically route payments through the most optimal channels,
+            ensuring the highest transaction success rates in the market.
+          </p>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#3BB75E"
+              class="bi bi-arrow-right-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              />
+            </svg>
+            Find out how we achieve success rates</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- page 3 -->
+    <section class="info-3">
+      <div class="info-3-l">
+        <div class="info3-l-1">
+          <h3 class="heading">
+            Build custom payments experiences with well-documented APIs
+          </h3>
+          <p class="heading-text">
+            Developers love our thorough, well-documented APIs that let you to
+            build everything from simple weekend projects, to complex financial
+            products serving hundreds of thousands of customers. If you can
+            imagine it, you can build it with Paystack.
+          </p>
+        </div>
+        <div class="info3-l-2">
+          <ul class="py-3">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Collect one-time and recurring payments from your app or website
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Make instant transfers
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Retrieve all your transaction and customer data
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#3BB75E"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              Verify the identity of customers
+            </li>
+          </ul>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#3BB75E"
+              class="bi bi-arrow-right-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              />
+            </svg>
+            Paystack API Quickstart</a
+          >
+        </div>
+      </div>
+      <div class="info-3-r">
+        <img src="assets/images/Robust-Suite-of-APIs-Opt.png" alt="" />
+      </div>
+    </section>
+
+    <!-- page 4 -->
+    <section class="info4">
+      <div class="info4-l">
+        <video
+          src="assets/images/Advanced-Fraud-Protection.mp4"
+          width="100%"
+        ></video>
+      </div>
+
+      <div class="info4-r">
+        <h3 class="heading">
+          Protect yourself and your customers with advanced fraud detection
+        </h3>
+        <p class="heading-text">
+          Paystack’s combination of automated and manual fraud systems protect
+          you from fraudulent transactions and associated chargeback claims.
+        </p>
+
+        <h3 class="heading heading-2">
+          Detailed reporting for accounting, reconciliation, and audits
+        </h3>
+        <p class="heading-text">
+          Understand your customers’ purchase patterns and do easy
+          reconciliations with a robust data Dashboard and easy exports.
+        </p>
+      </div>
+    </section>
+
+    <!-- page 5 -->
+    <section class="info5">
+      <div class="top-info">
+        <h2 class="heading">Trusted by 60,000+ businesses</h2>
+        <p class="heading-text">
+          Thousands of organizations of all sizes trust Paystack to grow their
+          business.
+        </p>
+      </div>
+      <div class="row b-info ">
+        <div class="col-md-6 col-lg-4 ">
+          <div class="card mb-3 px-3 b-info-h">
+            <img src="assets/images/globalbrands.svg" class=" mt-4 mb-2 px-3" alt="..." width="150px"/>
+            <div class="card-body a-clolor">
+              <h4 class="card-title heading">Paystack for <br> Global Brands</h4>
+              <p class="card-text">
+                We help global brands accept payments from across Africa
+              </p>
+              <br>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3BB75E"
+                  class="bi bi-arrow-right-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+                Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="card mb-3 px-3 b-info-h">
+            <img src="assets/images/forentrepreneurs.svg" class="mt-4 mb-2 px-3" alt="..." width="150px"/>
+            <div class="card-body a-clolor">
+              <h4 class="card-title heading">Paystack for <br> Entrepreneurs</h4>
+              <p class="card-text">
+                From startup to scale-up, we can support you at every stage of
+                your businesses’ growth
+              </p>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3BB75E"
+                  class="bi bi-arrow-right-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+                Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="card  mb-3 px-3 b-info-h">
+            <img src="assets/images/fororganisation.svg" class="mt-4 mb-2 px-3" alt="..." width="150px"/>
+            <div class="card-body a-clolor">
+              <h4 class="card-title heading">
+                Paystack for <br> Large Organizations
+              </h4>
+              <p class="card-text">
+                Paystack helps many of the largest corporate and government
+                organizations in Nigeria get paid quickly and securely.
+              </p>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3BB75E"
+                  class="bi bi-arrow-right-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+                Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- page 6 -->
+
+    <section class="info6">
+      <div class="info6-t">
+        <h2 class="heading">Powering growth for <br> amazing businesses</h2>
+        <p class="heading-text">
+          Paystack is a growth engine for a new generation of innovative,
+          forward-looking organizations operating in Africa.
+        </p>
+      </div>
+      <div class="info6-b ">
+        <img src="assets/images/Air-Peace-Stack-Blue_200305_154114.svg" alt="" width="230px" class="pr-2 sp">
+        <img src="assets/images/FilmHouse-Stack-Blue_200304_153641.svg" alt="" width="180px" class="pr-2 sp" >
+        <img src="assets/images/Piggyvest-Stack-Blue_200304_153734.svg" alt="" width="250" class="pr-2 sp">
+        <img src="assets/images/Ibom-Air-Stack-Blue_200304_154259.svg" alt="" width="190px" class="pr-2 sp">
+        <img src="assets/images/kuda-Stack-Blue_200304_154345.svg" alt="" width="220px" class="pr-2 sp">
+        <img src="assets/images/Ariiya-Stack-Blue_200304_155307.svg" alt="" width="70px" class=" sp">
+      </div>
+      <div class="info6-b-2 ">
+        <img src="assets/images/Dominos-Plain.svg" alt="" width="230px" class="pr-2">
+        <img src="assets/images/MTN-Plain.svg" alt="" width="200px" class="pr-3">
+        <img src="assets/images/Lagos-Internal-Revenue-Service.svg" alt="" width="230" class="pr-3">
+        <img src="assets/images/Bolt-Stack-Blue_200304_153027.svg" alt="" width="180px" class="pr-3">
+        <img src="assets/images/Betway-Plain.svg" alt="" width="200px" class="pr-2">
+        <img src="assets/images/carbon-dark.svg" alt="" width="120px" class="">
+      </div>
+      <div class="info6-b-3 ">
+        <img src="assets/images/Axa-mansard-_-Plain.svg" alt="" width="250px" class="pr-2">
+        <img src="assets/images/Abia-State-University.svg" alt="" width="200px" class="pr-2">
+        <img src="assets/images/GIGM-Plain_180827_172142.svg" alt="" width="220" class="pr-2">
+        <img src="assets/images/IrokoTV-Plain.svg" alt="" width="190px" class="pr-2">
+        <img src="assets/images/Smile-Plain_180827_172218.svg" alt="" width="170px" class="pr-2">
+        <img src="assets/images/Cowrywise-dark.svg" alt="" width="150px" class="">
+      </div>
+    </section>
+
+    <!-- page 7 -->
+
+    <section class="info7">
+      <div class="info7-t">
+        <h2 class="heading">Backed by strong global partners</h2>
+        <p class="heading-text">
+          Paystack is backed by notable investors as well as some of the best
+          payments companies on the planet.
+        </p>
+      </div>
+      <div class="row info7-b">
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3 info7-b-h px-3 mb-3">
+            <img
+              src="assets/images/stripe.png"
+              class="card-img-top info7-img1 mt-4 mb-2 px-3"
+              alt="..." 
+            />
+            <div class="card-body a-clolor">
+              <p class="card-text">
+                Paystack is highly technical and fanatically customer oriented.
+                We’re excited to back such people in one of the world’s
+                fastest-growing regions.
+              </p>
+
+              <div class="author mt-5">
+                <img src="assets/images/ceos.jpg" alt="" />
+                <div class="author-profile">
+                  <h5 class="heading">Patrick Collison</h5>
+                  <p>CEO, Stripe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3 info7-b-h px-3 mb-3">
+            <img
+              src="assets/images/visa.png"
+              class="card-img-top info7-img2 mt-4 mb-2 px-3"
+              alt="..." 
+            />
+            <div class="card-body a-clolor">
+              <p class="card-text">
+                Our investment in Paystack aligns with the kind of investments
+                we look for - those that will help extend our reach into the
+                global commerce ecosystem
+              </p>
+              <div class="author mt-4 pt-2">
+                <img src="assets/images/ceov.jpeg" alt="" />
+                <div class="author-profile">
+                  <h5 class="heading">Otto Williams</h5>
+                  <p>
+                    Head of Strategic Partnerships, Fintech & Ventures CEMEA,
+                    Visa
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3 info7-b-h px-3 mb-3">
+            <img
+              src="assets/images/img3.png"
+              class="card-img-top info7-img3 mt-4 mb-2 px-3"
+              alt="..." width="50px"
+            />
+            <div class="card-body a-clolor">
+              <p class="card-text">
+                As YC's first Nigerian startup Paystack leads the charge of
+                great companies coming out of Africa, powering modern payments
+                for an entire continent.
+              </p>
+              <div class="author mt-4 pt-2">
+                <img src="assets/images/ceoy.jpeg" alt="" />
+                <div class="author-profile">
+                  <h5 class="heading">Michael Seibel</h5>
+                  <p>
+                    CEO, Partner, Y Combinator
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer 1-->
+    <footer class="footer1">
+      <div class="top-heading">
+        <div class="top-heading-l">
+          <p class="heading-text">Try Paystack Now</p>
+          <h2 class="heading">Start accepting payments in just 30 minutes
+          </h2>
+        </div>
+        <div class="top-heading-r">
+          <button class="btn btn-success btn-lg" type="button">
+            Create free account
+          </button>
+        </div>
+      </div>
+      <div class="bottom-footer1">
+        <div class="container text-md-left">
+            <div class="row text-md-left ">
+              <div class="col-md-3 col-lg-3 col-xl-3 ms-auto mt-3 mb-3 p-style ">
+                <h4 > Why Paystack</h4>
+                <p><a href="#">Why Choose Paystack</a></p>
+                <p><a href="#">Success Rates</a></p>
+                <br>
+                <p><a href="#">For Entrepreneurs</a></p>
+                <p><a href="#">For Corporates</a></p>
+                <p><a href="#">For International Companies</a></p>
+                <p><br></p>
+                <p><a href="#">For Fintechs</a></p>
+                <p><a href="#">For Fintechs</a></p>
+                <p><a href="#">For Betting</a></p>
+              </div>
+
+              <div class="col-md-3 col-lg-3col-xl-3 ms-auto mt-3 mb-3 p-style">
+                <h4 > Pricing</h4>
+                <p><a href="#">Nigeria</a></p>
+                <p><a href="#">Ghana</a></p>
+                <p><a href="#">South Africa</a></p>
+                <p></p>
+                
+                <h4 >Customers
+                </h4>
+                <p><a href="#">Testimonials</a></p>
+                <p></p>
+                <h4 >Learn
+                </h4>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Guides</a></p>
+                <p><a href="#">Video Tutorials</a></p>
+                <p><a href="#">Decode Fintech</a></p>
+                <p><a href="#">Commerce</a></p>
+              </div>
+
+              <div class="col-md-3 col-lg-3 col-xl-3 ms-auto mt-3 mb-3 p-style">
+                <h4> Developers</h4>
+                <p><a href="#">Overview</a></p>
+                <p><a href="#">Documentation</a></p>
+                <p><a href="#">Status page</a></p>
+                <p></p>
+                <h4>Community</h4>
+                <p><a href="#">Nigeria Logos</a></p>
+                <p></p>
+                <h4>Support</h4>
+                <p><a href="#">Help Desk</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Why Was I Debited?</a></p>
+              </div>
+
+              <div class="col-md-3 col-lg-3 col-xl-3 ms-auto mt-3 mb-3 p-style">
+                <h4 > About</h4>
+                <p><a href="#">Company</a></p>
+                <p><a href="#">Compliance</a></p>
+                <p><a href="#">Careers</a></p>
+                <p><a href="#">Media Kit</a></p>
+                <p><a href="#">Privacy & Terms</a></p>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+    </footer>
+    <hr>
+    
+
+    <!-- footer 2 -->
+    <footer class="footer2">
+      <div class="bottom-footer2">
+        <div class="container text-md-left">
+            <div class="row text-md-left ">
+              <div class="col-md-3 col-lg-3 col-xl-3 ms-auto mt-3 mb-3 p-style ">
+                <h4 > Contact</h4>
+                <p><a href="#" id="email">hello@paystack.com</a></p>
+                <div class="icons">
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg></a>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg></a>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg></a>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg></a>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                  </svg></a>
+                </div>
+                
+              </div>
+
+              <div class="col-md-3 col-lg-3col-xl-3 ms-auto mt-3 mb-3 p-style">
+                <h4 > Lagos</h4>
+                <p>126 Joel Ogunnaike Street,<br>
+                  Ikeja GRA, Ikeja,<br>
+                  Lagos, Nigeria.</p>
+                  <p><a href="#" id="number">+234 163 16160</a></p>
+                <p></p>
+                <br>
+                <p></p>
+                <h4 >Accra
+                </h4>
+                <p>AfricaWorks,<br>
+                  35 Patrice Lumumba Road,<br>
+                  Airport Residential Area,<br>
+                  Accra, Ghana.</p>
+              </div>
+
+              <div class="col-md-3 col-lg-3 col-xl-3 ms-auto mt-3 mb-3 p-style">
+                <h4> San Francisco</h4>
+                <p>354 Oyster Point Blvd.,<br>
+                  South San Francisco,<br>
+                  CA 94080 <br>
+                  United States.</p>
+              </div>
+
+              <div class="col-md-3 col-lg-3 col-xl-3 ms-auto mt-3 mb-3 p-style">
+                <h4 > South Africa</h4>
+                <p>45 Kingfisher Dr <br>
+                  Fourways <br>
+                  Sandton, 2055 <br>
+                  South Africa.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
