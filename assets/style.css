@@ -14,7 +14,7 @@
 
 .navbar-nav li a {
   font-weight: 500 !important;
-  color: #011b33 !important;
+  color: #011b33;
   line-height: 1.3 !important;
   vertical-align: middle !important;
   letter-spacing: -0.01em !important;
@@ -82,6 +82,202 @@ h1 {
   margin-top: 20px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: #011b33;
+  color: #333;
+}
+
+.form-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.signup-box {
+  width: 450px;
+  height: 160vh;
+  margin: auto;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 35px 35px 30px;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.signup-box .title {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+form {
+  width: 380px;
+  margin-top: 20px;
+  /* padding-left: 7px; */
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 6px;
+  outline: none;
+}
+
+.lab {
+  display: flex;
+  justify-content: space-between;
+}
+.other-cont,
+.foot a,
+.para-2 a {
+  text-decoration: none;
+  color: #3676c8;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 6px;
+  outline: none;
+}
+
+input.radio {
+  width: auto;
+}
+
+.label-form {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.label-form .head,
+.label-form2 .head {
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rd {
+  margin-top: 10px;
+}
+
+/* .label-form .rd {
+  display: flex;
+  align-items: center;
+} */
+
+.rd label {
+  margin-left: 10px;
+}
+
+.label-form .p {
+  margin-left: 29px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.label-form2 {
+  font-size: 14px;
+}
+
+.label-form2 p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.label-form2 .y-n {
+  display: flex;
+  padding-top: 10px;
+}
+
+input[type="button"] {
+  width: 380px;
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #198754;
+  color: white;
+  font-size: 18px;
+}
+
+.y-n .no {
+  padding-left: 20px;
+}
+
+.yes label,
+.no label {
+  margin-left: 5px;
+}
+
+.foot {
+  text-align: center;
+  font-size: 14px;
+}
+
+.para-2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.para-2 a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.para-2 a :hover {
+  text-decoration: underline !important;
+}
+
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .info-bottom-l {
   bottom: 5%;
   left: 5%;
@@ -101,7 +297,7 @@ h1 {
   position: absolute;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .info1 {
     position: relative;
     width: auto;
@@ -111,7 +307,7 @@ h1 {
   .top-info {
     position: absolute;
     width: auto;
-    top: 10%;
+    top: 15%;
     left: 5%;
     right: 5%;
   }
@@ -141,6 +337,10 @@ h1 {
     left: 5%;
     position: absolute;
     width: auto;
+  }
+
+  .brand .axa {
+    display: none;
   }
 }
 
@@ -217,37 +417,37 @@ ul li {
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .info2 {
     margin: auto 0;
     width: auto;
-    height: 250vh;
+    height: 310vh;
     position: relative;
   }
 
   .info2-l {
-    top: 5%;
+    top: 1%;
     left: 5%;
     width: auto;
     position: absolute;
   }
 
   .img1 {
-    top: 15%;
+    top: 13%;
     left: 5%;
     width: auto;
     position: absolute;
   }
 
   .info2-r-1 {
-    top: 50%;
+    top: 36%;
     left: 5%;
     /* right: 8%; */
     position: absolute;
   }
 
   .info2-r-2 {
-    top: 66%;
+    top: 57%;
     left: 5%;
     /* right: 8%; */
     position: absolute;
@@ -257,7 +457,7 @@ ul li {
   }
 
   .info2-r-3 {
-    top: 85%;
+    top: 75%;
     left: 5%;
     /* right: 8%; */
     position: absolute;
@@ -291,23 +491,32 @@ ul li {
   position: absolute;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .info-3 {
     margin: auto 0;
     width: auto;
-    height: 150vh;
+    height: 120vh;
     position: relative;
   }
 
-  .info-3-r {
+  /* .info-3-r {
     top: 1%;
     left: 5%;
     right: 5%;
     position: absolute;
+  } */
+
+  .info-3-r {
+    display: none;
+    top: 1%;
+    left: 0%;
+    /* right: 0%; */
+    width: auto;
+    position: absolute;
   }
 
   .info-3-l {
-    top: 60%;
+    top: 0%;
     left: 5%;
     right: 5%;
     width: auto;
@@ -337,11 +546,11 @@ ul li {
   position: absolute;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .info4 {
     margin: auto 0;
     width: auto;
-    height: 70vh;
+    height: 150vh;
     position: relative;
   }
 
@@ -387,12 +596,12 @@ ul li {
   font-weight: 500;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .info5 {
     margin: auto 0;
     margin-top: 10%;
     width: auto;
-    height: 170vh;
+    height: 270vh;
     position: relative;
   }
 
@@ -401,7 +610,7 @@ ul li {
   }
 
   .b-info {
-    top: 18%;
+    top: 28%;
     left: 5%;
     right: 5%;
     position: absolute;
@@ -452,12 +661,12 @@ ul li {
   padding-right: 130px !important;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .info6 {
     margin: auto 0;
     margin-top: 10%;
     width: auto;
-    height: 50vh;
+    height: 100vh;
     position: relative;
   }
 
@@ -563,11 +772,11 @@ ul li {
   padding-bottom: 15px;
 } */
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .info7 {
     margin: auto 0;
     width: auto;
-    height: 190vh;
+    height: 250vh;
     position: relative;
   }
 
@@ -580,7 +789,7 @@ ul li {
   }
 
   .info7-b {
-    top: 18%;
+    top: 25%;
     left: 5%;
     right: 5%;
     width: auto;
@@ -625,11 +834,11 @@ ul li {
   color: #011b33;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .footer1 {
     margin: auto 0;
     width: auto;
-    height: 100vh;
+    height: 120vh;
     position: relative;
   }
 
@@ -653,7 +862,7 @@ ul li {
   }
 
   .bottom-footer1 {
-    top: 35%;
+    top: 45%;
     width: auto;
     position: absolute;
   }
