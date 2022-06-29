@@ -542,38 +542,39 @@ ul li {
 /* page 6 */
 
 .info6 {
-  margin: auto 0;
-  margin-top: 10%;
+  padding: 4rem;
   width: 100%;
-  height: 100vh;
-  position: relative;
+  min-height: 70vh;
+}
+
+.info6-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .info6-t {
-  left: 5%;
-  width: 40%;
-  position: absolute;
+  max-width: 45%;
+}
+
+.info6-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .info6-b {
-  top: 45%;
-  left: 5%;
-  right: 5%;
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
 }
-
 .info6-b-2 {
-  top: 62%;
-  left: 5%;
-  right: 5%;
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
 }
 
 .info6-b-3 {
-  top: 79%;
-  left: 5%;
-  right: 5%;
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pr-2 {
@@ -584,35 +585,25 @@ ul li {
   padding-right: 130px !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
   .info6 {
-    margin: auto 0;
-    margin-top: 10%;
-    width: auto;
-    height: 70vh;
-    position: relative;
+    padding: 2rem;
+  }
+
+  .info6-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .info6-t {
-    left: 5%;
-    right: 5%;
-    width: auto;
-    position: absolute;
+    max-width: 100%;
   }
-
   .info6-b {
-    top: 50%;
-    left: 5%;
-    right: 5%;
-    position: absolute;
-  }
-
-  .sp {
-    padding-bottom: 40px;
-  }
-
-  .pr-2 {
-    margin-right: -60px !important;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
 
   .info6-b-2 {
@@ -693,16 +684,10 @@ ul li {
   padding-bottom: 15px;
 } */
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
   .info7 {
     padding: 2rem;
   }
-  /* .info7-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-  } */
 
   .info7-t {
     max-width: 100%;
@@ -743,7 +728,7 @@ ul li {
   color: #011b33;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
   .footer1 {
     padding: 2rem;
   }
